@@ -17,3 +17,21 @@
     @error "Write the Pixel value without unit";
   }
 }
+
+// Convert from percent to rem
+
+@function P_to_rem($percent) {
+  @if math.is-unitless($percent) {
+    @return math.div($percent, 100) + rem;
+  } @else {
+    @error "Write the Pixel value without unit";
+  }
+}
+
+@function P_to_em($percent) {
+  @if math.is-unitless($percent) {
+    @return math.div($percent, 100) + em;
+  } @else {
+    @error "Write the Pixel value without unit";
+  }
+}

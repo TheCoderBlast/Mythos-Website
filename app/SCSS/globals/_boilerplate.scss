@@ -16,3 +16,21 @@ body {
   padding: 0;
   font-family: u.$fonts;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    left: 0;
+    width: auto;
+    height: auto;
+    border: 1px solid;
+    padding: 0.5rem;
+    background-color: #fff;
+  }
+}

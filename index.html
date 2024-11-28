@@ -29,18 +29,51 @@
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <header></header>
-    <main>
+    <a href="#main" class="visually-hidden">Skip link</a>
+
+    <header class="topnav">
+      <h2 class="visually-hidden"></h2>
+      <div class="wrapper topnav__wrapper">
+        <a href="/" class="topnav__homelink">
+          <img
+            src="/img/logo-mythos.svg"
+            alt="Mythos HomePage"
+            class="topnav__logo"
+            width="128"
+            height="36"
+          />
+        </a>
+        <nav>
+          <ul class="topnav__links">
+            <li class="topnav__item">
+              <a href="" class="topnav__link">FEATURES</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">PRICING</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
       <article>
         <section class="wrapper">
           <h1>Find that elusive unicorn.</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-            libero tempore eos voluptatum tempora, quidem, fuga dolore illum
-            possimus repellendus ipsa dicta repudiandae fugit expedita, labore
-            quaerat nam atque vitae? Voluptas id nobis aliquid quibusdam aliquam
-            autem, animi quis optio, possimus distinctio nulla voluptatibus ea
-            placeat consectetur neque vero corporis!
+            libero tempore
+            <span
+              >eos voluptatum tempora, quidem, fuga dolore illum possimus
+              repellendus</span
+            >
+            ipsa dicta repudiandae fugit expedita, labore quaerat nam atque
+            vitae? Voluptas id nobis aliquid quibusdam aliquam autem, animi quis
+            optio, possimus distinctio nulla voluptatibus ea placeat consectetur
+            neque vero corporis!
           </p>
         </section>
         <section class="wrapper">
@@ -56,6 +89,7 @@
         </section>
         <section class="wrapper">
           <h3>AI-powered matching</h3>
+          s
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
             libero tempore eos voluptatum tempora, quidem, fuga dolore illum
