@@ -1,0 +1,25 @@
+@use '../util/' as u;
+
+.hero {
+  background-color: var(--hero-bg);
+
+  &__wrapper {
+  }
+
+  &__image {
+    width: u.rem(200);
+
+    @include u.breakpoint-up(large) {
+      width: u.rem(483);
+    }
+  }
+
+  &__text {
+  }
+
+  &__title {
+  }
+
+  &__content {
+  }
+}
